@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: rgb(179, 255, 229);
+        }
+
+        h4 {
+            position: absolute;
+            left: calc(50% - 90px);
+            top: calc(50% - 50px);
+            width: 180px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(128, 255, 9);
+            color: black;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 1s;
+            z-index: 10;
+        }
+
+        h4:hover {
+            opacity: 0.3;
+        }
+
+        div img {
+            display: block;
+            position: absolute;
+            width: 400px;
+            transition: 1s;
+            border: 1px solid gainsboro;
+        }
+
+        .prawy-gorny img {z-index: 2;}
+        .prawy-gorny img:nth-child(1) {
+            right: 50px;
+            top: 50px;
+        }
+        .prawy-gorny img:nth-child(2) {
+            right: 100px;
+            top: 100px;
+        }
+        .prawy-gorny img:nth-child(3) {
+            right: 150px;
+            top: 150px;
+        }
+        .prawy-gorny img:nth-child(4) {
+            right: 200px;
+            top: 200px;
+        }
+  
+        .prawy-dolny img:nth-child(1) {
+            right: 50px;
+            bottom: 50px;
+        }
+        .prawy-dolny img:nth-child(2) {
+            right: 100px;
+            bottom: 100px;
+        }
+        .prawy-dolny img:nth-child(3) {
+            right: 150px;
+            bottom: 150px;
+        }
+        .prawy-dolny img:nth-child(4) {
+            right: 200px;
+            bottom: 200px;
+        }
+   
+        .lewy-gorny img {z-index: 3;}
+        .lewy-gorny img:nth-child(1) {
+            left: 50px;
+            top: 50px;
+        }
+        .lewy-gorny img:nth-child(2) {
+            left: 100px;
+            top: 100px;
+        }
+        .lewy-gorny img:nth-child(3) {
+            left: 150px;
+            top: 150px;
+        }
+        .lewy-gorny img:nth-child(4) {
+            left: 200px;
+            top: 200px;
+        }
+ 
+        .lewy-dolny img {z-index: 2;}
+        .lewy-dolny img:nth-child(1) {
+            left: 50px;
+            bottom: 50px;
+        }
+        .lewy-dolny img:nth-child(2) {
+            left: 100px;
+            bottom: 100px;
+        }
+        .lewy-dolny img:nth-child(3) {
+            left: 150px;
+            bottom: 150px;
+        }
+        .lewy-dolny img:nth-child(4) {
+            left: 200px;
+            bottom: 200px;
+        }
+
+        div img:hover {
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="prawy-gorny">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+    </div>
+    <div class="prawy-dolny">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+    </div>
+
+    <div class="lewy-gorny">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+    </div>
+
+    <div class="lewy-dolny">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+        <img src="https://i.pinimg.com/736x/e9/a4/9f/e9a49fadab387707f7d7d40d7314c2e3--studio-ghibli.jpg" alt="landscape">
+    </div>
+
+    <h4>Antoni Bizoń</h4>
+</body>
+</html>

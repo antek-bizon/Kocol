@@ -1,0 +1,19 @@
+form {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+}
+
+form > h4, form > h4 + p {
+    text-align: center;
+}
+
+input[type=radio] {margin-left: 30%;}
+.center {text-align: center;}
+.left-gap {margin-left: 10px;}
+
+.VIP-OK {
+    display: none;
+}
+
+#vip-id:checked ~ .VIP-OK {display: block;}

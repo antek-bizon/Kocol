@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get">
+        <h4>Formularz kontaktowy</h4>
+        <p>Podaj swoje nazwisko i imię: <input type="text" name="nazwisko" size="30"></p>
+        <hr>
+        <!--Metoda 1 na checkbox-->
+        <p><input type="checkbox" name="opcje">Zgadzam się na przetwarzanie moich danych osobowych</p>
+        <hr>
+        <!--Metoda 2 na checkbox-->
+        <label><input type="checkbox" name="materiały">Zgadzam się na wysyłanie materiałów reklamowych</label>
+        <hr>
+        <!--Metoda 3 na checkbox-->
+        <input type="checkbox" name="vip" id="vip-id">
+        <label for="vip-id">Posiadam kartę VIP</label>
+        <hr>
+
+        <div class="VIP-OK">
+        <h4>Rodzaj kart VIP:</h4>
+        <input type="radio" value="SILVER" name="vip-status" checked>Silver<br>
+        <input type="radio" value="GOLD" name="vip-status">Gold<br>
+        <input type="radio" value="PLATINIUM" name="vip-status">Platinium<br>
+        <input type="radio" value="LEGENDARY" name="vip-status" disabled>Legenadry<br>
+        <hr>
+        </div>
+
+        <div class="center">
+            <input type="password" name="hasło" size="15" maxlength="12" class="center">
+        </div>
+        <input type="submit" value="Wysyłam" style="margin-left: 200px; margin-bottom: 7px;">
+        <input type="reset" value="RESET" style="margin-left: 70px;">
+
+    </form>
+
+</body>
+</html>

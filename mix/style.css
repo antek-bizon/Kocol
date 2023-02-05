@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    height: 1200px;
+    align-content: flex-start;
+    border: 1px dotted black;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 10%;
+    background-color: yellow;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    padding: 1px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+header > img {
+    display: block;
+    margin: 0 auto;
+    height: 246px;
+}
+
+nav {
+    display: flex;
+    width: 20%;
+    height: 500px;
+    border-left: 1px solid black;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    min-width: 200px;
+    padding: 25px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: yellowgreen;
+}
+
+
+nav ul li.hide {
+    height: 0;
+    display: none;
+    transition: 0.3s;
+}
+
+nav ul li.hide:hover {
+    height: fit-content;
+    display: block;
+}
+
+nav ul li.hide a {
+    margin-left: 30px;
+}
+
+nav ul li.hide a:hover {
+    background-color: yellowgreen;
+}
+
+nav ul .dropdown:hover~li.hide {
+    height: fit-content;
+    display: block;
+}
+
+main {
+    display: flex;
+    width: 50%;
+    height: 500px;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    background-color: white;
+}
+
+main p {
+    margin: auto;
+}
+
+aside {
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    background-color: white;  
+    overflow: auto;
+}
+
+aside div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+aside div img {
+    margin: 5px auto;
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    border: 2px dashed black;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.footer-1 {
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-1 form {
+    margin: 0 auto;
+    padding: 10px;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-1 table {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.footer-1 table td {
+    padding: 3px;
+}
+
+.footer-1 fieldset {
+    padding: 7px;
+}
+
+.footer-1 td[colspan="2"] {
+    text-align: center;
+
+}
+
+.footer-1 input[type="submit"] {
+    padding: 3px 26px;
+    text-transform: uppercase;
+}
+
+.footer-2 {
+    width: 67%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-2 img {
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: max-content;
+}

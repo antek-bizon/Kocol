@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bizon Antoni - Zadanie</title>
+        <style>
+        .box-1, .box-2, .box-3 {
+            width: 50%;
+            height: 200px;
+            border: 7px dotted black;
+            padding: 50px;
+            background: lightblue;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a1/Cnidoscolus_stimulosus_%28flower%29_low_res.jpg);
+         }
+
+        .box-1 {background-clip: padding-box;}
+        .box-2 {background-clip: border-box;}
+        .box-3 {background-clip: content-box;}
+
+        .back-ori1, .back-ori2, .back-ori3 {
+            width: 50%;
+            height: 200px;
+            border: 7px dotted black;
+            padding: 50px;
+            background: violet;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxkbrtc9irElS3W5GCzNwWNzzjn71lplGC8pfg7ocjQhYBirBg7Iv2YqabxNH9o-Ulr4&usqp=CAU);
+background-repeat: no-repeat;
+        }
+
+        .back-ori1- {background-origin: padding-box;}
+        .back-ori2 {background-origin: border-box;}
+        .back-ori3 {background-origin: content-box;}
+
+        .grad-1, .grad-2, .grad-3, .grad-4, .grad-5 {
+            width: 50%;
+            height: 200px;
+            border: 7px dotted black;
+            padding: 50px;
+        }
+
+        .grad-1 {background-image: linear-gradient(to left, red, green, blue, rgba(0,0,255,0));}
+        .grad-2 {background-image: radial-gradient(blue, violet);}
+        .grad-3 {background-image: repeating-linear-gradient(red, yellow 10%, green 20%);}
+        .grad-4 {background-image: repeating-radial-gradient(circle, pink 15%, blue 20%, gold 30%);}
+        .grad-5 {background-image: conic-gradient(red 0deg, orange 90deg, yellow 180deg, green 270deg, blue 360deg);}
+        </style>
+    </head>
+    <body>
+        <h2>Background-clip</h2>
+        <h3>Padding-box</h3>
+        <div class = "box-1"></div>
+        <h3>Border-box</h3>
+        <div class = "box-2"></div>
+        <h3>Content-box</h3>
+        <div class = "box-3"></div>
+
+        <h2>Background-clip</h2>
+        <h3>Padding-box</h3>
+        <div class = "back-ori1"></div>
+        <h3>Border-box</h3>
+        <div class = "back-ori2"></div>
+        <h3>Content-box</h3>
+        <div class = "back-ori3"></div>
+
+        <h2>Gradient</h2>
+        <h3>Linear-gradient</h3>
+        <div class = "grad-1"></div>
+        <h3>Radial-box</h3>
+        <div class = "grad-2"></div>
+        <h3>Repeating-linear-gradient</h3>
+        <div class = "grad-3"></div>
+        <h3>Repeating-radial-gradient</h3>
+        <div class = "grad-4"></div>
+        <h3>Conic-gradient</h3>
+        <div class = "grad-5"></div>
+    </body>
+</html>

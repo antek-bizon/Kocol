@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=number] {-moz-appearance: textfield;}
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset style="width: 450px;">
+            <h2>Formularz rejestracyjny:</h2>
+            <table>
+                <tr>
+                    <td>Podaj swoje nazwisko:</td>
+                    <td><input type="text"  style="width: 200px;"></td>
+                </tr>
+                <tr>
+                    <td>Podaj swoje imię:</td>
+                    <td><input type="text" style="width: 200px;"></td>
+                </tr>
+            </table>
+            <p>Wybierz płeć:</p>      
+                <label><input type="radio" name="plec" value="kobieta">Kobieta</label>
+                <label><input type="radio" name="plec" value="mężczyzna">Mężczyzna</label>
+            <p>Podaj wiek:</p>
+            <input type="number">
+            <br>
+            <p>Podaj adres e-mail</p>
+            <input type="email" name="e-mail" style="width: 200px;">
+            <p>Wybierz wykształcenie:</p>
+            <label><input type="radio" name="wykształcenie" value="Podstawowe">Podstawowe</label>
+            <br>
+            <label><input type="radio" name="wykształcenie" value="Średnie">Średnie</label>
+            <br>
+            <label><input type="radio" name="wykształcenie" value="Wyższe">Wyższe</label>
+            <p>Wybierz języki:</p>
+            <select name="języki" multiple>
+                <option>Język angielski</option>
+                <option>Język niemiecki</option>
+                <option>Język francuski</option>
+                <option>Język włoski</option>
+                <option>Język rosyjski</option>
+                <option>Język hiszpański</option>
+            </select>
+            <p>Wybierz zainteresowania:</p>
+            <label><input type="checkbox" value="Motoryzacja">Motoryzacja</label>
+            <br>
+            <label><input type="checkbox" value="Sport">Sport</label>
+            <br>
+            <label><input type="checkbox" value="Muzyka">Muzyka</label>
+            <br>
+            <label><input type="checkbox" value="Taniec">Taniec</label>
+            <br>
+            <label><input type="checkbox" value="Gry komputerowe">Gry komputerowe</label>
+            <br>
+            <label><input type="checkbox" value="Inne">Inne (podaj jakie)</label>
+            <input type="text">
+            <p>Wpisz swoje uwagi</p>
+            <textarea name="uwagi" cols="30" rows="10"></textarea>
+            <br>
+            <label><input type="checkbox" name="dane osobowe" value="zdadzam się">Zgadzam się na przetwarzanie moich danych osobowych</label>
+            <br>
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Wyczyść">
+        </fieldset>
+    </form>
+</body>
+</html>

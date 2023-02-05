@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/rysunek.svg" alt="header">
+        </header>
+        <nav>
+            <ul>
+                <li><a>Opcja 1</a></li>
+                <li><a>Opcja 2</a></li>
+                <li class="dropdown"><a>Opcja 3</a></li>
+                <li class="hide">
+                    <a>Opcja 3.1</a>
+                    <a>Opcja 3.2</a>
+                </li>
+                <li><a>Opcja 4</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>MAIN 50% H:500px</p>
+        </main>
+        <aside>
+            <div>
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8064bf47aad251ac6aa9e65ad02a108052baa8d715f577eb5a4fe996cc9188d8._RI_V_TTW_.jpg" alt="Jin Roh">
+                <img src="https://fwcdn.pl/fpo/82/49/98249/7180083_1.3.jpg" alt="Perfect blue">
+            </div>
+            <div>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmRhYjIwNmItNzg2Ny00MWMwLWIyMTItMmZkYmM0ODEwOTEyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="I lost my body">
+                <img src="https://www.galeriaplakatu.com/img/imagecache/693x1026_product_media_Akira_Poster_akira_13827694_1013_1500-j.webp" alt="Akira">
+            </div>
+        </aside>
+        <footer>
+            <div class="footer-1">
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <fieldset class="form-1">
+                                    <legend>Dane logowania</legend>
+                                    <table>
+                                        <tr>
+                                            <td>Login:</td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hasło:</td>
+                                            <td><input type="password"></td>
+                                        </tr>
+                                    </table>  
+                                </fieldset>
+                            </td>
+                            <td>
+                                <fieldset class="form-2">
+                                    <legend>Płeć</legend>
+                                    <table>
+                                        <tr>
+                                            <td><input id="kobieta" type="radio" name="plec" value="kobieta"></td>
+                                            <td><label for="kobieta">Kobieta</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input id="mezczyzna" type="radio" name="plec" value="mezczyzna"></td>
+                                            <td><label for="mezczyzna">Mężczyzna</label></td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Login">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </form>
+            </div>
+            <div class="footer-2">
+                <img src="img/napis.png" alt="napis">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
